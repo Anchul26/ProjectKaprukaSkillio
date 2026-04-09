@@ -13,7 +13,7 @@ import com.sourcePackage.Keyword;
 public class WaitFor {
 
     private static WebDriverWait newWait() {
-        WebDriverWait wait = new WebDriverWait(Keyword.threadLocal.get(), Duration.ofSeconds(60));
+        WebDriverWait wait = new WebDriverWait(Keyword.threadLocal.get(), Duration.ofSeconds(10));
         wait.pollingEvery(Duration.ofMillis(500));
         wait.ignoring(NoSuchElementException.class);
         return wait;
@@ -35,4 +35,8 @@ public class WaitFor {
         newWait().until(ExpectedConditions.stalenessOf(element));
     }
 
-}
+    public static void presenceOfAllElementLocated(By element, int initialCount) {
+		newWait().until(ExpectedConditions.numberOfElementsToBeMoreThan(element,initialCount));
+		//newWait().until(ExpectedConditions.presenceOfElementLocated(element));
+	}
+}	
