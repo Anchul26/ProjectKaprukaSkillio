@@ -47,4 +47,8 @@ public void verifyTheProductRemoveFromaddTOCart() throws InterruptedException {
 	    String prices = cookerprice.displayedPrice();
 		Assert.assertEquals(prices, "US$41.66 (₹3,768)");
 	}
+	public void verifythe() {
+		// TODO Auto-generated method stub
+
+	}
 }

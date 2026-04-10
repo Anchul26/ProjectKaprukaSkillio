@@ -29,4 +29,9 @@ public String displayedPrice() {
 	return GetPrice.getText();
 
 }
+public void verigy() {
+	// TODO Auto-generated method stub
+
 }
+}
+//this is important cooker

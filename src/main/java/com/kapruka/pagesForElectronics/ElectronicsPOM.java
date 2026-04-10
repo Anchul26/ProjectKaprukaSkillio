@@ -59,5 +59,10 @@ public class ElectronicsPOM {
 		
 		
 	}
+	public void verfjg() {
+		// TODO Auto-generated method stub
+
+	}
 	
 }
+//this is important fan
