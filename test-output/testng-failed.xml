@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Kapruka.LoginPage">
+      <class name="com.Kapruka.ElectronicsTest">
         <methods>
           <include name="setup"/>
-          <include name="logingUsingInvalidEmail"/>
+          <include name="verifyTheBabyCooker"/>
           <include name="logout"/>
         </methods>
-      </class> <!-- com.Kapruka.LoginPage -->
+      </class> <!-- com.Kapruka.ElectronicsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

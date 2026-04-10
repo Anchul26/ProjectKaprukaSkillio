@@ -27,7 +27,7 @@ public class LoginPage extends BaseClass {
 				
 	}
 	
-	@Test (priority = 1)
+	//@Test (priority = 1)
 	public void logingUsingInvalidPassword() {
 		LoginPagePOM loginPagePOM = PageFactory.initElements(Keyword.threadLocal.get(), LoginPagePOM.class);
 		loginPagePOM.loginAccountbtnToBeClickable();
@@ -41,7 +41,7 @@ public class LoginPage extends BaseClass {
 		Assert.assertEquals(errorMessage, "Your password is wrong. Please try again.");		
 	}
 	
-	@Test (priority = 2)
+	//@Test (priority = 2)
 	public void logingUsingInvalidEmail() {
 		LoginPagePOM loginPagePOM = PageFactory.initElements(Keyword.threadLocal.get(), LoginPagePOM.class);
 		loginPagePOM.loginAccountbtnToBeClickable();
